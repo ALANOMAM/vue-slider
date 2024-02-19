@@ -11,7 +11,7 @@ createApp({
         return {
 
             // mi salvo una variabile dove memorizzo quale sia la slide attiva
-            tabIndex: 1,
+            tabIndex: 0,
             
             slides: [
                     {
@@ -47,9 +47,15 @@ createApp({
 
         }
     },
-    methods: {
     
+    methods: {
+       forward(){
+        this.tabIndex++
+       },
 
+       backward(){
+        this.tabIndex--
+       }
 
     }
 }).mount('#app');
