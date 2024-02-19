@@ -11,7 +11,7 @@ createApp({
         return {
 
             // mi salvo una variabile dove memorizzo quale sia la slide attiva
-            tabIndex: 0,
+            tabIndex: 1,
             
             slides: [
                     {
