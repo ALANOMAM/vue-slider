@@ -47,14 +47,23 @@ createApp({
 
         }
     },
-    
+
     methods: {
        forward(){
         this.tabIndex++
+
+      if(this.tabIndex >= this.slides.length ){
+        this.tabIndex = 0
+      }
+
        },
 
        backward(){
         this.tabIndex--
+
+        if (this.tabIndex < 0) {
+            this.tabIndex = this.slides.length - 1;
+        }
        }
 
     }
