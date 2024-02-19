@@ -11,8 +11,8 @@ createApp({
         return {
 
             // mi salvo una variabile dove memorizzo quale sia la slide attiva
-            activeSlideIndex: 0,
-
+            tabIndex: 0,
+            
             slides: [
                     {
                        image: 'img/01.webp',
