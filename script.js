@@ -64,6 +64,10 @@ createApp({
         if (this.tabIndex < 0) {
             this.tabIndex = this.slides.length - 1;
         }
+       },
+
+       hoverSlide(index){
+        this.tabIndex = index
        }
 
     }
